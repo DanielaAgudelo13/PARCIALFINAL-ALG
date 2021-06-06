@@ -11,7 +11,7 @@ public class Logica {
 	private Mundo mundo;
 
 	public Logica(PApplet app) {
-		this.marco = new Marco(400, 300, 25, 8, 255, 0, 0, true, 0, false);
+		this.marco = new Marco(400, 300, 25, 8, 228, 0, 224, true, 0, false);
 		this.app = app;
 		this.polos = new ArrayList<Polo>();
 		for (int i = 0; i < 20; i++) {
@@ -23,7 +23,7 @@ public class Logica {
 			if(i % 4 == 0) {
 				dirX = -1;
 			}
-			this.polos.add(new Polo(50 + (100 * i), 50 + (50 * i), 25, 4, 0, 255, 0, true, 0, dirX, dirY));
+			this.polos.add(new Polo(50 + (100 * i), 50 + (50 * i), 25, 4, 0, 181, 236, true, 0, dirX, dirY));
 		}
 		this.mundo = new Mundo("", polos);
 	}
